@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About Us - IleraNigeria</title>
+	<link rel="stylesheet"  href="style.css">
+    <link rel="shortcut icon" href="img\logo\logo2.png">
+    <script src="https://kit.fontawesome.com/7f614b2d1e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+	<div  class="logo"><img src="img/logo/logo.png" width="100px" height="45px"></div>
+	<div class="menuToggle" onclick="toggleMenu();"></div>
+	<ul class="navigation">
+		<li><a href="index.html">Home</a></li>
+		<li><a class="active" href="about.html">About</a></li>
+		<li><a href="events.html">Events</a></li>
+		<li><a href="achievement.html">achievements</a></li>
+		<li><a href="contact.html">Contact</a></li>	
+		<li><a href="join.html">join us</a></li>	
+
+	</ul>
+</header>
+
+<section class="banner2" >
+	<div class="content2">
+		<div class="h12">
+			About <span style="color:orangered;">Us</span>
+		</div>
+	</div>
+</section> 
+
+<section class="about">
+	<div class="row">
+		<div class="col50" >
+			<p >
+				<h1 style="font-weight: bolder; font-size: 25px; margin-bottom: 16px; ">IleraNigeria</h1>
+				<span style="font-size: 15px;">IleraNigeria is a non-profit organisation 
+				committed to impacting local communities in Nigeria 
+				in the area of healthcare and development through research,
+				 advocacy, health promotion and health care service delivery.<br><br>
+				 Our vision is to build healthy local communities by promoting access to health care services and healthy life practices. <br><br>
+				 We are raising a community of members and volunteers who are passionate and deliberate about access to healthcare in local communities and will become key influencers in achieving our vision. 
+
+                 We are committed to continuous collaboration and partnership with organisations, government, as well as others who are pivotal in the achievement of our vision.
+
+                 We are passionate about community-based outreaches and research activities targeted at different groups of people who share common interest either by vocation, geographic location, or belief.
+                 <br><br>
+				 We achieve our vision through our set of structured of programs directed at a specific group of people per time, including but not limited to the following:
+                 'Thumbs & Bumbles', 'Cancer, Cares & Cures', 
+                 'All Positive' and '16 in 18 communities' are some of the defined programs </span><br>
+
+			</p>
+		</div>
+		<div class="col50">
+			<div class="imgbx">
+				<img src="img/logo/team.png">
+				
+			</div>
+		</div>
+	</div>
+	
+</section>
+
+<section class="become" style="margin-bottom: 110px;">
+	<div class="vol">
+		<h1>
+			Become a Volunteer
+		</h1>
+		<h3>
+			Give a Hand To Make The World Better 
+		</h3><br>
+        	<a href="join.html" class="btn5" >JOIN US NOW</a>
+	</div>
+</section>
+
+
+<section class="banner3" >
+	<div class="content3">
+		<div class="h13">
+			Need To <span style="color:orangered;">Talk </span> With Us?
+
+		</div>
+		<a href="contact.html" class="btn7" >CONTACT US<i class="fa-solid fa-angle-right" style="margin-left:6px;"></i></a>
+	</div>
+</section> 
+
+<section class="footer">
+	<footer >
+	<div class="contain">
+		<div class="roww">
+			<div class="footer-col">
+				<h2>Our Vision</h2>
+				<h4>Our vision is to build healthy local communities by promoting access to health care services and healthy life practices.</h4>
+			</div>
+			<div class="footer-col">
+				<h2>Quick Links</h2>
+	                <ul>
+	                	<li><a href="index.html">Home</a></li>
+	                	<li><a href="about.html">About</a></li>
+	                	<li><a href="events.html">Events</a></li>
+	                	<li><a href="achievement.html">achievements</a></li>	
+	                	<li><a href="contact.html">Contact</a></li>	
+	                	<li><a href="join.html">join us</a></li>
+	                </ul>
+			</div>
+            <div class="footer-col">
+				<h2>Contact Us</h2>
+				<h4><i class="fa fa-home"></i><span>Head Office</span></h4>
+				<p class="p">Parakin Behinde living Hope Hospital Ile-Ife Osun State, Nigeria</p>
+				<h4><i class="fa fa-phone"></i><span>Phone Number</span></h4>
+				<p class="p">+2347036848104<br>+2348089730901</p>
+                <h4><i class="fa fa-envelope-o"></i><span>Email</span></h4>
+                <p class="p">awedekehinde@ileraNigeria.com<br>ileranigeria1@gmail.com</p>
+			</div>
+			<div class="footer-col" >
+				<h2>Follow us</h2>
+				<div class="social-links">
+					
+					   <a href="https://www.instagram.com/ileranigeria/"><i class="fa-brands fa-instagram"></i></a>
+					   <a href="https://web.facebook.com/ileranigeria/"><i class="fa-brands fa-facebook"></i></a>
+					   <a href="https://api.whatsapp.com/send?phone=2348069825120&app=facebook&entry_point=page_cta"><i class="fa-brands fa-whatsapp"></i></a>
+					   <a href="https://twitter.com/IleraNigeria"><i class="fa-brands fa-twitter"></i></a>
+					   <a href="https://www.flickr.com/photos/154264905@N06/"><i class="fa-brands fa-flickr"></i></a>
+					
+				</div>
+		</div>
+
+	</div>
+</footer>
+</section>
+		<div class="copyright">
+			<p>Copyright ©2022 All rights reserved</p>
+		</div>
+
+
+
+ <script type="text/javascript">
+ 	window.addEventListener('scroll', function(){
+ 	const header = document.querySelector('header');
+ 	header.classList.toggle("sticky", window.scrollY > 0);
+ 
+ });
+
+ 	function toggleMenu(){
+  	const menuToggle = document.querySelector('.menuToggle');
+  	const navigation = document.querySelector('.navigation');
+  	menuToggle.classList.toggle('active');
+  	navigation.classList.toggle('active');
+  }
+
+</script>
+
+
+</body>
+</html>

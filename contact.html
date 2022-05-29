@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact Us - IleraNigeria</title>
+	<link rel="stylesheet"  href="style.css">
+    <link rel="shortcut icon" href="img\logo\logo2.png">
+    <script src="https://kit.fontawesome.com/7f614b2d1e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+	<div  class="logo"><img src="img/logo/logo.png" width="100px" height="45px"></div>
+	<div class="menuToggle" onclick="toggleMenu();"></div>
+	<ul class="navigation">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="events.html">Events</a></li>
+		<li><a href="achievement.html">achievements</a></li>
+		<li><a class="active" href="contact.html">Contact</a></li>	
+		<li><a href="join.html">join us</a></li>	
+
+	</ul>
+</header>
+
+<section class="banner2" >
+	<div class="content2">
+		<div class="h12">
+			Contact <span style="color:orangered;">US</span>
+		</div>
+	</div>
+</section> 
+
+<section class="contact">
+	<div class="row">
+		<div class="contactcol">
+			<div>
+				<i class="fa fa-home"></i>
+				<span>
+					<h5>Parakin Behinde living Hope Hospital Ile-Ife</h5>
+					<p>Osun State, Nigeria</p>
+				</span>
+			</div>
+			<div>
+				<i class="fa fa-phone"></i>
+				<span>
+					<h5>+2347036848104<br>+2348089730901</h5>
+					<p></p>
+				</span>
+			</div>
+			<div>
+				<i class="fa fa-envelope-o"></i>
+				<span>
+					<h5>awedekehinde@ileraNigeria.com<br>ileranigeria1@gmail.com</h5>
+					<p>Send us your query anytime!</p>
+				</span>
+			</div>
+		</div>
+		<div class="contactcol">
+			<form action="form-handler.php" method="POST">
+				<input type="text" name="name" placeholder="Enter your name" required>
+				<input type="email" name="email" placeholder="Enter your email address" required>
+				<input type="text" name="subject" placeholder="Enter your subject " required>
+				<textarea rows="8" placeholder="Message" required></textarea>
+				<button type="submit" class="btn6">SEND MESSAGE</button>
+			</form>
+	</div>
+</section>
+
+<section class="footer">
+	<footer >
+	<div class="contain">
+		<div class="roww">
+			<div class="footer-col">
+				<h2>Our Vision</h2>
+				<h4>Our vision is to build healthy local communities by promoting access to health care services and healthy life practices.</h4>
+			</div>
+			<div class="footer-col">
+				<h2>Quick Links</h2>
+	                <ul>
+	                	<li><a href="index.html">Home</a></li>
+	                	<li><a href="about.html">About</a></li>
+	                	<li><a href="events.html">Events</a></li>
+	                	<li><a href="achievement.html">achievements</a></li>	
+	                	<li><a href="contact.html">Contact</a></li>	
+	                	<li><a href="join.html">join us</a></li>
+	                </ul>
+			</div>
+            <div class="footer-col">
+				<h2>Contact Us</h2>
+				<h4><i class="fa fa-home"></i><span>Head Office</span></h4>
+				<p class="p">Parakin Behinde living Hope Hospital Ile-Ife Osun State, Nigeria</p>
+				<h4><i class="fa fa-phone"></i><span>Phone Number</span></h4>
+				<p class="p">+2347036848104<br>+2348089730901</p>
+                <h4><i class="fa fa-envelope-o"></i><span>Email</span></h4>
+                <p class="p">awedekehinde@ileraNigeria.com<br>ileranigeria1@gmail.com</p>
+			</div>
+			<div class="footer-col" >
+				<h2>Follow us</h2>
+				<div class="social-links">
+					
+					   <a href="https://www.instagram.com/ileranigeria/"><i class="fa-brands fa-instagram"></i></a>
+					   <a href="https://web.facebook.com/ileranigeria/"><i class="fa-brands fa-facebook"></i></a>
+					   <a href="https://api.whatsapp.com/send?phone=2348069825120&app=facebook&entry_point=page_cta"><i class="fa-brands fa-whatsapp"></i></a>
+					   <a href="https://twitter.com/IleraNigeria"><i class="fa-brands fa-twitter"></i></a>
+					   <a href="https://www.flickr.com/photos/154264905@N06/"><i class="fa-brands fa-flickr"></i></a>
+					
+				</div>
+		</div>
+
+	</div>
+</footer>
+</section>
+		<div class="copyright">
+			<p>Copyright ©2022 All rights reserved</p>
+		</div>
+
+
+ <script type="text/javascript">
+ 	window.addEventListener('scroll', function(){
+ 	const header = document.querySelector('header');
+ 	header.classList.toggle("sticky", window.scrollY > 0);
+ 
+ });
+
+
+    function toggleMenu(){
+  	const menuToggle = document.querySelector('.menuToggle');
+  	const navigation = document.querySelector('.navigation');
+  	menuToggle.classList.toggle('active');
+  	navigation.classList.toggle('active');
+  }
+
+</script>
+
+</body>
+</html>
