@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>IleraNigeria</title>
+	<title>Achievements - IleraNigeria</title>
 	<link rel="stylesheet"  href="style.css">
     <link rel="shortcut icon" href="img\logo\logo2.png">
     <script src="https://kit.fontawesome.com/7f614b2d1e.js" crossorigin="anonymous"></script>
@@ -18,11 +18,7 @@
 		<li><a href="events.html">Events</a></li>
 		<li><a class="active" href="achievement.html">achievements</a></li>	
 		<li><a href="contact.html">Contact</a></li>	
-		<li><a href="join.html">join us</a></li>
-		<li><a href="#" style="color:orangered;"><i class="fas fa-envelope"></i></a></li>
-
-
-
+		<li><a href="partner.html">Partner with us</a></li>
 	</ul>
 </header>
 
@@ -253,6 +249,46 @@
 		</div>
 	</div>
 </section>
+<div class="imp">
+			<h1 class="titletext3" >IMPACT</h1>
+			<p class="lm">Through the activities above, IleraNigeria has impacted on more than 70,000 individuals directly and indirectly between the year 2017 and 2021</p>
+</div>
+<section class="impact">
+	<div class="vessel">
+		<div class="tex">
+			<span class="counter" data-val=70000>70000</span><span>+</span>
+			<p>individuals</p>
+		</div>
+		<div class="tex">
+			<span class="counter" data-val=100>100 </span><span>+</span>
+			<p>volunteers</p>
+		</div>
+		<div class="tex">
+			<span class="counter" data-val=20>20</span><span>+</span>
+			<p>communities</p>
+		</div>
+		<div class="tex">
+			<span class="counter" data-val=16>16</span>
+			<p>members</p>
+		</div>
+		<div class="tex">
+			<span class="counter" data-val=2>2</span>
+			<p>chapters</p>
+		</div>								
+	</div>
+</section>
+<section>
+    <div class="ara">
+    	<div class="dod">
+            <h1 class="vh">Our work is supported and funded by leading thought partners</h1>
+    	    <img src="img/logo/imgll.png" >
+    		<img src="img/logo/imgll1.png" >
+    	</div>
+    </div>
+    </div>
+</section>
+	<div class="cen"><a href="partner.html" class="btn9" > Partner With Us </a></div>
+
 
 <section class="banner3" >
 	<div class="content3">
@@ -281,17 +317,19 @@
 	                	<li><a href="events.html">Events</a></li>
 	                	<li><a href="achievement.html">achievements</a></li>	
 	                	<li><a href="contact.html">Contact</a></li>	
-	                	<li><a href="join.html">join us</a></li>
+	                	<li><a href="partner.html">partner with us</a></li>
 	                </ul>
 			</div>
             <div class="footer-col">
 				<h2>Contact Us</h2>
-				<h4><i class="fa fa-home"></i><span>Head Office</span></h4>
+				<h4><i class="fa fa-home"></i><span>Office Address</span></h4>
 				<p class="p">Parakin Behinde living Hope Hospital Ile-Ife Osun State, Nigeria</p>
+				<h4><i class="fa fa-home"></i><span>Office Address 2</span></h4>
+                <p class="p">House 1, Cele Ilagbe, Felicia Street, Off Madojutimi Abiola Way, Abeokuta Ogun State, Nigeria</p>
 				<h4><i class="fa fa-phone"></i><span>Phone Number</span></h4>
-				<p class="p">+2347036848104<br>+2348089730901</p>
+				<p class="p">+2348089730901</p>
                 <h4><i class="fa fa-envelope-o"></i><span>Email</span></h4>
-                <p class="p">awedekehinde@ileraNigeria.com<br>ileranigeria1@gmail.com</p>
+                <p class="p">info@ileraNigeria.com<br>ileranigeria1@gmail.com</p>
 			</div>
 			<div class="footer-col" >
 				<h2>Follow us</h2>
@@ -311,7 +349,7 @@
 </section>
 
 		<div class="copyright">
-			<p>Copyright ©2022 All rights reserved</p>
+			<p>Copyright ©2022 IleraNigeria.All rights reserved</p>
 		</div>
 
 
@@ -331,6 +369,36 @@
 
 </script>
 
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+	$('.counter').counterUp({
+    delay: 10,
+    time: 1000
+});
+</script> 
+<!-- 
+<script>
+	let valueDisplays=document.querySelectorAll(".counter");
+	let interval=100000;
+	valueDisplays.forEach((valueDisplay)=>{
+		let startValue = 0;
+		let endValue=parseInt(valueDisplay.getAttribute("data-val"));
+		let duration=Math.floor(interval/endValue);
+		let counter=setInterval(function(){
+			startValue
+			+=1;
+			valueDisplay.textContent=startValue;
+			if(startValue==endValue){
+				clearInterval(counter);
+			}
+		},duration=0.5
+		);
+	});
+</script>
+ -->
 </body>
 </html>

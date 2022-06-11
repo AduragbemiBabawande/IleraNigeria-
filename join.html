@@ -3,25 +3,188 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Join Us- IleraNigeria</title>
-	<link rel="stylesheet"  href="style.css">
+	<title>Join Us - IleraNigeria</title>
+	<link rel="stylesheet"  href="test.css">
+    <link rel="stylesheet"  href="virtual-select.min.css">
     <link rel="shortcut icon" href="img\logo\logo2.png">
+    <script src="https://kit.fontawesome.com/7f614b2d1e.js" crossorigin="anonymous"></script>
 </head>
-<body> 
-<section >
- <h1 >
- 	THIS PAGE IS CURRENTLY UNAVAILABLE <br>KINDLY CONTACT awedekehinde@ileranigeria TO JOIN US NOW OR CLICK ON THE BUTTON BELOW TO MESSAGE US DIRECTLY <br><a href="contact.html" class="btn3">CLICK ME</a>
- </h1>
- </section>
- <style type="text/css">
- 	body{
-    background: black; color:white; font-size: 30px; font-weight:600;
- }
- @media (max-width: 900px){
-    body{
-    font-size: 20px; font-weight:600;
- }
- }
+<body>
+
+	<section class="sec">
+				  <div  class="logo2"><img src="img/logo/logo.png" width="100px" height="45px"></div>
+	<div class="body">
+<div class="container">
+	<h1 class="h1">Volunteer</h1>
+	 <p class="p">Volunteer at Ilera Nigeria, Add value to the lives of people in your local community</p>
+	 <form>
+	 	<div class="row">
+	 		<div class="column">
+	 			 <label for="Firstname">Firstname<span style="color:red">*</span></label>
+                  <input class="input" type="text" name="Firstname" required placeholder="Enter your Firstname" id="firstname">
+	 		</div>
+                <div class="column">
+                  <label for="Lastname">Lastname<span style="color:red">*</span></label>
+                  <input class="input" type="text" name="Lastname" required placeholder="Enter your Lastname" id="Lastname">
+                 </div>  
+                 <div class="column">
+                 	<label for="gender">Gender<span style="color:red">*</span></label>
+                 	<select class="input" name="gender">
+                 		<option></option>
+                 		<option>Male</option>
+                 		<option>Female</option>
+                 	</select>
+                 </div>
+                 <div class="column">
+                 	<label for="age">Age<span style="color:red">*</span></label>
+                 	<input type="date" name="age" class="input">
+                 </div>
+                <div class="column">
+                  <label for="state">City/State<span style="color:red">*</span></label>
+                  <input class="input" type="text" name="Lastname" required placeholder="Enter your City" id="state">
+                 </div>                                
+                  <div class="column">
+                  <label for="email">Email Address<span style="color:red">*</span></label>
+                  <input class="input" type="email" name="email" required placeholder="Enter your email" id="email">
+                  </div>                
+                  <div class="column">
+                  <label for="number">Phone Number/Whatsapp Number<span style="color:red">*</span></label>
+                  <input class="input" type="text" name="phone" required placeholder="Enter your Phone Number" id="number">
+                  </div>
+                  <div class="column">
+                  <label for="number">Employed</label>
+                  <input type="radio" name="student" id="employed">
+                  <input class="input" type="text" name="employed"  placeholder="Enter your Profession" id="employed">
+                  </div>
+                  <div >
+                  <label for="student">Student</label>  
+                  <input type="radio" name="student" id="student">
+                  <!-- <label for="course">Course Of Study</label>  --> 
+                  <input class="input" type="text" name="course" placeholder="Enter your course" id="course">                 
+                  </div>
+                  <div class="column">
+                  <label for="number">Unemployed</label>
+                  <input type="radio" name="student" id="Unemployed">
+                  <label for="number" style="margin-left:40px;">Corper</label>
+                  <input type="radio" name="student" id="Unemployed">
+                  </div>      
+                  <div >
+                  <label for="Volunteer">How do you want to volunteer<span style="color:red">*</span></label>
+                  <select id="multipleselect" multiple name="native-select" placeholder="You can choose more than one" data-search="false" data-silent-initial-value-set="true" >
+                        <option value="1" >Field work</option>
+                        <option value="2">Social Media Awareness</option>
+                       <option value="3" >Webinar Moderator</option>
+                       <option value="4" >Content Developer</option>
+                       <option value="5" >Data Analyst</option>
+                       <option value="6" >In-Kind Support/Sponsor</option>
+                       <option value="7" >Photography/Videography</option>
+                       <option value="8" >Graphic Design</option>
+                       <option value="9" >Fund Raising</option>
+                       <option value="10">Student Ambassador(for student alone)</option>
+                  </select>
+                   </div>  
+                  <div> <button type="submit" >Submit</button></div>
+                   <div class="box"><input  type="checkbox" name="" required > I would like to be added to IleraNigeria whatsapp group page</div>
+                   <div class="box"><input  type="checkbox" name="" required > I agree that i have read and fully understand this and pledged my commitment</div>                           
+	 	</div>
+	 </form>
+</div>
+</div>
+</section>
+<section class="sup">
+	
+</section>
+<section>
+<div class="testimonials">
+  <div class="inner">
+    <h1>Volunteers Testimonials</h1>
+    <div class="border"></div>
+
+    <div class="oow">
+      <div class="col">
+        <div class="testimonial">
+          <div class="details">
+          <div class="imgbx">
+            <img src="img/logo/testi.png">
+          </div>
+          <!-- <div class="year">2017</div> -->
+          <div class="name1">Oluwakemi</div></div>
+ <!--          <div class="stars">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+          </div> -->
+          <p>
+                My experience volunteering with
+                IleraNigeria was
+                unforgettable; it has shaped my
+                outlook and has given me a
+                greater understanding of what needs to be done to improve the wellbeing of  people in my local community
+          </p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="testimonial">
+          <!-- <div class="year">2018</div> -->
+          <div class="name">Omotayo</div>
+<!--           <div class="stars">
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+          </div> -->
+          <p >
+              I participated in the red umbrella walk organized by ileranigeria that took place in ilesha town(South West, Nigeria) while I was a student Nurse. It was a wonderful  experience for me. I learnt a lot on how to conduct HIV testing and awareness in my community
+          </p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="testimonial">
+         <!--  <div class="year">2019</div> -->
+          <div class="name">Ifetoyosi</div>
+<!--           <div class="stars">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+          </div> -->
+          <p >
+             I volunteered as a webinar moderator and was given the opportunity to anchor  one of IleraNigeria webinar session on Oral health. It has improved my skills greatly and my passion for health education via the media.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section class="footer">
+  <div class="social">
+     <a href="https://www.instagram.com/ileranigeria/"><i class="fa-brands fa-instagram"></i></a>
+             <a href="https://web.facebook.com/ileranigeria/"><i class="fa-brands fa-facebook"></i></a>
+             <a href="https://api.whatsapp.com/send?phone=2348069825120&app=facebook&entry_point=page_cta"><i class="fa-brands fa-whatsapp"></i></a>
+             <a href="https://twitter.com/IleraNigeria"><i class="fa-brands fa-twitter"></i></a>
+             <a href="https://www.flickr.com/photos/154264905@N06/"><i class="fa-brands fa-flickr"></i></a>
+  </div>
+                    <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="achievement.html">achievements</a></li>  
+                    <li><a href="contact.html">Contact</a></li> 
+                    <li><a href="partner.html">partner with us</a></li>
+                  </ul>
+                  <p class="copyright">Copyright ©2022 IleraNigeria.All rights reserved</p>
+</section>
 </style>
+<script type="text/javascript" src="virtual-select.min.js"></script>
+<script type="text/javascript">
+   VirtualSelect.init({ 
+      ele: '#multipleselect' 
+});
+</script> 
 </body>
 </html>
