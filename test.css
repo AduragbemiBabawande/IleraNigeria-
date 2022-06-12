@@ -27,7 +27,7 @@ body{
 }
 .container1{
 	background-color: white;
-	padding: 25px 40px;
+	padding: 10px 40px;
 	width: 100%;
 	border-radius: 10px;
 	box-shadow: 0 5px 35px rgba(0, 0, 0, 0.33);	
@@ -100,7 +100,7 @@ button{
 	width: 100%;
 }
 .sup{
-	height:650px;
+	height:800px;
 		background-image:linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url(img/logo/background1.png);
 			background-size: cover;
 	background-repeat: no-repeat;*/
@@ -110,7 +110,7 @@ button{
 
 @media(max-width: 668px){
 		.sup{
-		height: 850px;
+		height: 900px;
 	}
 	.container1{
 	padding: 25px 10px;
@@ -141,18 +141,89 @@ button{
     justify-content: center;
 }
 .col{
-	flex: 33.33%;
-	max-width: 33.33%;
+	flex: 100%;
+	max-width: 100%;
 	box-sizing: border-box;
-	padding: 15px;
+	padding-left: 5px;
+	padding-right: 35px;
 }
-.testimonial{
+
+.oow .owl-carousel{
+    overflow: hidden;
+    padding: 0 20px;
+}
+.owl-carousel .owl-stage-outer{
+	padding: 30px 20px;
+}
+.client-info{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding-top: 30px;
+}
+.client-info .client-details h6{
+	color: rgb(94, 92, 92);
+	font-size: 15px;
+	font-weight: 400;
+
+}
+.client-info .client-pic{
+	padding-right: 15px;
+} 
+.client-info .client-pic img{
+	width: 100%;
+	border-radius: 60px;
+	height: 100%;
+}
+.client-info .client-pi{
+	text-align: center;
+
+}
+.client-info .client-pi a{
+	color: inherit;
+	font-size: 35px;
+	width: 70px;
+	border:1px solid #ccc ;
+	line-height: 68px;
+	display: inline-block;
+	text-align: center;
+	border-radius: 50%;
+	margin: 0 8px;
+	opacity: 0.85;
+}
+
+.owl-dots{
+	text-align: center;
+}
+.owl-dots button{
+	background: #6f6df4 !important;
+	width: 11px;
+	height: 11px;
+	border-radius: 26px;
+	margin: 0 5px;
+	transition: 0.3s;
+}
+.owl-dots button.active{
+    width: 25px;
+}
+.col .testimonial p{
+	font-size: 18px;
+	color:  #4d4d4d;
+	font-weight: 400;
+	font-style: italic;
+	margin-bottom: 35px;
+}
+.quote{
+	font-size: 10px;
+}
+/*.testimonial{
 	background: #fff;
 	padding: 30px;
 	border-radius: 20px;
 	height: 37vh;
-}
-.name1{
+}*/
+/*.name1{
 	font-size: 22px;
 	text-transform: capitalize;
 	margin: 20px 0;
@@ -164,7 +235,7 @@ button{
 	text-transform: capitalize;
 	margin: 20px 0;
 	color: #1c093c;
-}
+}*/
 .stars{
 	color:#4c46f5;
 	margin-bottom: 20px;
@@ -247,18 +318,27 @@ p{
 }
 
 @media screen and (max-width: 960px){
-	.col{
+/*	.col{
 		flex: 100%;
 		max-width: 80%;
-	}
+	}*/
 
 }
 @media screen and (max-width: 600px){
-	.col{
+/*	.col{
 		flex: 100%;
 		max-width: 100%;
-	}
+	}*//*
 	.testimonial{
-		height: 45vh;
-	}
+       height: 45vh;
+	}*/
+}
+
+.testimonial-area .cointainer{
+	max-width: 1200px;
+	padding: 30px 40px;
+ }
+.testimonial-area{
+   justify-content: center;
+   align-items: center;
 }

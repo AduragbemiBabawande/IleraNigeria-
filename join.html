@@ -8,6 +8,7 @@
     <link rel="stylesheet"  href="virtual-select.min.css">
     <link rel="shortcut icon" href="img\logo\logo2.png">
     <script src="https://kit.fontawesome.com/7f614b2d1e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
 </head>
 <body>
 
@@ -85,7 +86,8 @@
                    </div>  
                   <div> <button type="submit" >Submit</button></div>
                    <div class="box"><input  type="checkbox" name="" required > I would like to be added to IleraNigeria whatsapp group page</div>
-                   <div class="box"><input  type="checkbox" name="" required > I agree that i have read and fully understand this and pledged my commitment</div>                           
+                   <div class="box"><input  type="checkbox" name="" required > I agree that i have read and fully understand this and pledged my commitment</div>     
+                   <p class="p">For more Info reach us @ volunteer@ileranigeria </p>                      
 	 	</div>
 	 </form>
 </div>
@@ -97,69 +99,93 @@
 <section>
 <div class="testimonials">
   <div class="inner">
-    <h1>Volunteers Testimonials</h1>
+    <h1>Testimonials</h1>
     <div class="border"></div>
 
-    <div class="oow">
+    <div class="oow owl-carousel" >
       <div class="col">
         <div class="testimonial">
-          <div class="details">
-          <div class="imgbx">
-            <img src="img/logo/testi.png">
-          </div>
-          <!-- <div class="year">2017</div> -->
-          <div class="name1">Oluwakemi</div></div>
- <!--          <div class="stars">
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-          </div> -->
           <p>
-                My experience volunteering with
+               <span class="quote"> <i class="fa fa-quote-left" aria-hidden="true"></i></span>My experience volunteering with
                 IleraNigeria was
                 unforgettable; it has shaped my
                 outlook and has given me a
-                greater understanding of what needs to be done to improve the wellbeing of  people in my local community
+                greater understanding of what needs to be done to improve the wellbeing of  people in my local community<span class="quote"><i class="fa fa-quote-right" aria-hidden="true"></i></span>
           </p>
+          <div class="client-info">
+                  <div class="client-pic">
+                    <a href="#">
+                      <img src="img/logo/testi.png">
+                    </a>
+                  </div>
+                  <div class="client-details">
+                    <h6>Busayo JaiyeOluwa Oluwatosin</h6>
+                  </div>
+                </div>
         </div>
       </div>
       <div class="col">
         <div class="testimonial">
-          <!-- <div class="year">2018</div> -->
-          <div class="name">Omotayo</div>
-<!--           <div class="stars">
-            <i class="fa fa-star-o" aria-hidden="true"></i>
-            <i class="fa fa-star-o" aria-hidden="true"></i>
-            <i class="fa fa-star-o" aria-hidden="true"></i>
-            <i class="fa fa-star-o" aria-hidden="true"></i>
-            <i class="fa fa-star-o" aria-hidden="true"></i>
-          </div> -->
           <p >
-              I participated in the red umbrella walk organized by ileranigeria that took place in ilesha town(South West, Nigeria) while I was a student Nurse. It was a wonderful  experience for me. I learnt a lot on how to conduct HIV testing and awareness in my community
+             <span class="quote"> <i class="fa fa-quote-left" aria-hidden="true"></i></span>I participated in the red umbrella walk organized by ileranigeria that took place in ilesha town(South West, Nigeria) while I was a student Nurse. It was a wonderful  experience for me. I learnt a lot on how to conduct HIV testing and awareness in my community<span class="quote"><i class="fa fa-quote-right" aria-hidden="true"></i></span>
           </p>
+           <div class="client-info">
+                  <div class="client-pi">
+                    <a href="#">
+                      <i class="fa fa-file-image-o" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                  <div class="client-details">
+                    <h6>Anonymous</h6>
+                  </div>
+                </div>
         </div>
       </div>
       <div class="col">
         <div class="testimonial">
-         <!--  <div class="year">2019</div> -->
-          <div class="name">Ifetoyosi</div>
-<!--           <div class="stars">
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star-o" aria-hidden="true"></i>
-          </div> -->
           <p >
-             I volunteered as a webinar moderator and was given the opportunity to anchor  one of IleraNigeria webinar session on Oral health. It has improved my skills greatly and my passion for health education via the media.
+           <span class="quote"> <i class="fa fa-quote-left" aria-hidden="true"></i></span>I volunteered as a webinar moderator and was given the opportunity to anchor  one of IleraNigeria webinar session on Oral health. It has improved my skills greatly and my passion for health education via the media<span class="quote"><i class="fa fa-quote-right" aria-hidden="true"></i></span>
           </p>
+            <div class="client-info">
+                  <div class="client-pic">
+                    <a href="#">
+                      <img src="img/logo/testi1.png">
+                    </a>
+                  </div>
+                  <div class="client-details">
+                    <h6>Busayo Oluwatosin</h6>
+                  </div>
+                </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" ></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+         $('.oow').owlCarousel({
+         loop:true,
+         margin:10,
+         dots:true,
+         autoplay:true,
+         autoplayTimeout:4000,
+         smartspeed:800,
+         responsive:{
+             0:{
+                 items:1
+             },
+             600:{
+                 items:1
+             },
+             1000:{
+                 items:1
+             }
+    }
+})
+  });
+</script>
 </section>
 <section class="footer">
   <div class="social">
