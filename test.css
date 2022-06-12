@@ -25,7 +25,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-.container{
+.container1{
 	background-color: white;
 	padding: 25px 40px;
 	width: 100%;
@@ -112,6 +112,9 @@ button{
 		.sup{
 		height: 850px;
 	}
+	.container1{
+	padding: 25px 10px;
+}
 }
 .testimonials{
 	padding: 40px 0;
