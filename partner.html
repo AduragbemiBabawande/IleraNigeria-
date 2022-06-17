@@ -9,10 +9,13 @@
     <script src="https://kit.fontawesome.com/7f614b2d1e.js" crossorigin="anonymous"></script>
 </head>
 <body>
- 
+        <div align="right" class="head"> <a href="index.html">Home</a>
+       <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
 <div  class="logo2"><img src="img/logo/logo.png" width="100px" height="45px"></div>
 	
-</div >
+
  
 <!-- <div class="back"><a href="achievement.html"><i class="fa fa-arrow-left" aria-hidden="true"></i><a><div> -->
 <div class="bodyy">
@@ -20,30 +23,30 @@
     		 <div class="form-login">
     		 	<span class="titl">Fill the form to Partner with us now</span>
                 
-                <form action="#">
+                <form action="https://sheetdb.io/api/v1/27epymn8i5e7p" method="post" id="sheetdb-form">
                 <div class="input-field">
                 	<h3 class="atext">Firstname<span style="color: red;">*</span></h3>
-                	<input type="text" name="" required>
+                	<input type="text" name="data[Firstname]" required>
                  </div>                
                  <div class="input-field">
                 	<h3 class="atext">Lastname<span style="color: red;">*</span></h3>
-                	<input type="text" name="" required>
+                	<input type="text" name="data[Lastname]" required>
                   </div>                
                   <div class="input-field">
                 	<h3 class="atext">Email<span style="color: red;">*</span></h3>
-                	<input type="email" name="" required>
+                	<input type="email" name="data[Email]" required>
                   </div>                
                   <div class="input-field">
                 	<h3 class="atext">Phone Number<span style="color: red;">*</span></h3>
-                	<input type="text" name="" required>
+                	<input type="text" name="data[Phone]" required>
                   </div>                
                   <div class="input-field">
                 	<h3 class="atext">Company Name<span style="color: red;">*</span></h3>
-                	<input type="text" name="" required>
+                	<input type="text" name="data[Company-name]" required>
                   </div>                
                   <div class="input-field">
                 	<h3 class="atext">How would you like to partner with IleraNigeria?<span style="color: red;">*</span></h3>
-                	<input type="text" name="" required>
+                	<input type="text" name="data[Volunteer]" required>
                   </div>
                   <button type="submit" class="btnp">Submit</button>
                 </form>
@@ -88,6 +91,23 @@
   }
 
 </script>  -->
+</script> 
+        <script>
+            var form = document.getElementById('sheetdb-form');
+        form.addEventListener("submit", e => {
+          e.preventDefault();
+          fetch(form.action, {
+              method : "POST",
+              body: new FormData(document.getElementById("sheetdb-form")),
+          }).then(
+              response => response.json()
+          ).then((html) => {
+            // you can put any JS code here
+            window.open('page1.html', '_blank');
 
+          });
+        });
+        </script>
+        
 </body>
 </html>

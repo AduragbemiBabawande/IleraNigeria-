@@ -1,82 +1,3 @@
-<?php
-// echo uniqid();
-if(isset($_POST['donate'])){
-  $Firstname = htmlspecialchars($_POST["Firstname"]);
-  $Lastname = htmlspecialchars($_POST["Lastname"]);
-  $email = htmlspecialchars($_POST["email"]);
-  $phone_number = htmlspecialchars($_POST["phone"]);
-  $amount = htmlspecialchars($_POST["amount"]);
-  $currency = htmlspecialchars($_POST["currency"]);
-
-  //integate rave payment
-  $endpoint = "https://api.flutterwave.com/v3/payments";
-  //required data
-  $postdata = array(
-    "tx_ref" => uniqid().uniqid(),
-    "currency" => $currency,
-    "amount" => $amount,
-    "customer" =>array(
-            "Firstname" => $Firstname,
-            "Lastname" => $Lastname,
-            "email" => $email,
-            "phone_number" => $phone_number
-       ),
-
-    "customizations" =>array(
-            "title" => "Donate to IleraNigeria",
-            "description" => "A page for the collect",
-            // "logo" => "ileranigeria/img/logo/logo.png"
-      ), 
-
-       "meta" =>array(
-            "reason" => "To help the poor",
-            "address" => "Nigeria"
-       ),
-      "redirect_url" => "‪‪http://localhost/IleraNigeria/verified.php"
-  );
-
-//init cURL handler
-  $ch = curl_init();
-//turn off ssl checking
-  curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
-//set the end point
-  curl_setopt($ch, CURLOPT_URL, $endpoint);
-
-//turn on the cURL post method
-  curl_setopt($ch, CURLOPT_POST, 0);
-
-//encode post field
-  curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($postdata));
-
-//make it return data
-  curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-
-//set waiting timeout
-  curl_setopt($ch, CURLOPT_CONNECTTIMEOUT,200);
-  curl_setopt($ch, CURLOPT_TIMEOUT,200);
-
-//set the headers from endpoint
-  curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-    "Authorization: Bearer FLWSECK_TEST-886dd5e7fb896585400be3381a353981-X",
-    "Content-Type: Application/json",
-    "Cache-Control: no-cache"
-  ));
-//execute the cURL session
-$request = curl_exec($ch);
-
-$result = json_decode($request);
-
-// var_dump($result);
-header("Location: ".$result->data->link);
-
-//close curl
-curl_close($ch);
-
-}
-
-?>
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -88,6 +9,10 @@ curl_close($ch);
     <script src="https://kit.fontawesome.com/7f614b2d1e.js" crossorigin="anonymous"></script>
 </head>
 <body>
+         <div align="right" class="head2"> <a href="index.html">Home</a>
+       <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
   <div  class="logo2"><img src="img/logo/logo.png" width="100px" height="45px"></div>
   
 </div >
@@ -98,7 +23,7 @@ curl_close($ch);
       <div class="form">
          <div class="form-login">
                 
-                <form action="#" method="POST">
+                <form action="https://qa.interswitchng.com/paymentgateway/link/pay/IleraNiNFZYj" method="POST">
                 <div class="input-field2">
                   <h3 class="atext2">Firstname
                   <input type="text" name="Firstname" required>
@@ -146,7 +71,6 @@ curl_close($ch);
     background-repeat: no-repeat;
     }
 </style>
-
 
 </body>
 </html>

@@ -4,7 +4,7 @@ $visitor_email = $_POST['email'];
 $subject = $_POST['subject'];
 $message = $_POST['message'];
 
-$email_from = 'kehinde@IleraNigeria.com';
+$email_from = 'kehinde@IleraNigeria.org';
 
 $email_subject = 'New Form Submission @IleraNigeria';
 
@@ -13,7 +13,7 @@ $email_body = "User Name: $name.\n";
               "Subject: $subject.\n";
               "User Message: $message.\n";
 
-$to = 'adurababawande28@gamil.com';
+$to = 'ileranigeria1@gamil.com';
 
 $headers = "From: $email_from \r\n";
 

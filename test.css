@@ -88,11 +88,14 @@ button{
 	background: linear-gradient(130deg,#6f6df4,#4c46f5);
 	border-radius: 5px;
 	width: 100%;
-
+    cursor: pointer;
 	color: white;
+	font-weight: 700;
 }
+
+
 .logo2 {
-	padding: 60px 60px;
+	padding: 50px 30px;
 }
 .box{
 	color: #606060;
@@ -341,4 +344,66 @@ p{
 .testimonial-area{
    justify-content: center;
    align-items: center;
+}
+.head a{
+   text-decoration: none;
+   color: white;
+   padding-right: 30px;
+   font-size: 12px;
+}
+.head a:hover{
+	color: orangered;
+}
+.butt{
+	padding: 10px 60px;
+	background: #fff;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+	font-size: 22px;
+	font-weight: 500;
+	border-radius: 30px;
+}
+.popup{
+	width: 400px;
+	background: white;
+	border-radius: 6px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%) ;
+	text-align: center;
+	padding: 0 30px 30px;
+	color: #333;
+	visibility: hidden;
+	transition: transform 0.4s, top 0.4s;
+}
+
+
+.popup img{
+	width: 100px;
+	margin-top: -50px;
+	border-radius: 50%;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.popup h2{
+	font-size: 38px;
+	font-weight: 500;
+	margin: 30px 0 10px;
+}
+.popup button{
+	width: 100%;
+	margin-top: 50px;
+	padding: 10px 0;
+	background: #6fd649;
+	color: white;
+	border: 0;
+	outline: none;
+	font-size: 18px;
+	border-radius: 4px;
+	cursor: pointer;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.popup p{
+	font-weight: 500;
 }

@@ -81,7 +81,23 @@ body{
     color: orangered ;
     background: transparent;
 }
-
+.head a{
+   text-decoration: none;
+   color:#284359 ;
+   padding-right: 30px;
+   font-size: 12px;
+   font-weight: 800;
+}
+.head2 a{
+   text-decoration: none;
+   color:white ;
+   padding-right: 30px;
+   font-size: 12px;
+   font-weight: 800;
+}
+.head2 a:hover{
+	color: orangered;
+}
 header{
 	position: fixed;
 	top: 0;
@@ -442,7 +458,7 @@ section{
 }
 
 .footer-col .social-links a{
-	font-size: 25px;
+	font-size: 27px;
 	letter-spacing: 15px;
     color: skyblue;
     transition: all 0.5s ease;
@@ -1382,7 +1398,9 @@ section{
     letter-spacing: 2px;
     border-radius: 5px;
     margin-top: 40px;
+    font-weight: 700;
 }
+
  .input-field2 span input{
 	color: white;
 	background: blue;

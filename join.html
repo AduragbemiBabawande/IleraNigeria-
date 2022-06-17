@@ -5,86 +5,93 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Join Us - IleraNigeria</title>
 	<link rel="stylesheet"  href="test.css">
+      <link  href="page2.html" >
     <link rel="stylesheet"  href="virtual-select.min.css">
     <link rel="shortcut icon" href="img\logo\logo2.png">
     <script src="https://kit.fontawesome.com/7f614b2d1e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
 </head>
+
 <body>
 
 	<section class="sec">
+       <div align="right" class="head"> <a href="index.html">Home</a>
+       <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
 				  <div  class="logo2"><img src="img/logo/logo.png" width="100px" height="45px"></div>
+
 	<div class="body">
 <div class="container1">
 	<h1 class="h1">Volunteer</h1>
 	 <p class="p">Volunteer at Ilera Nigeria, Add value to the lives of people in your local community</p>
-	 <form>
+	 <form action="https://sheetdb.io/api/v1/bugrpikjsd3zw" method="post" id="sheetdb-form">
 	 	<div class="row">
 	 		<div class="column">
 	 			 <label for="Firstname">Firstname<span style="color:red">*</span></label>
-                  <input class="input" type="text" name="Firstname" required placeholder="Enter your Firstname" id="firstname">
+                  <input class="input" type="text" name="data[Firstname]" required placeholder="Enter your Firstname" id="firstname">
 	 		</div>
                 <div class="column">
                   <label for="Lastname">Lastname<span style="color:red">*</span></label>
-                  <input class="input" type="text" name="Lastname" required placeholder="Enter your Lastname" id="Lastname">
+                  <input class="input" type="text" name="data[Lastname]" required placeholder="Enter your Lastname" id="Lastname">
                  </div>  
                  <div class="column">
                  	<label for="gender">Gender<span style="color:red">*</span></label>
-                 	<select class="input" name="gender">
+                 	<select class="input" name="data[Gender]" name="data[gender]">
                  		<option></option>
                  		<option>Male</option>
                  		<option>Female</option>
                  	</select>
                  </div>
                  <div class="column">
-                 	<label for="age">Age<span style="color:red">*</span></label>
-                 	<input type="date" name="age" class="input">
+                 	<label for="age">Date of Birth<span style="color:red">*</span></label>
+                 	<input type="date" name="data[DOB]" class="input">
                  </div>
                 <div class="column">
                   <label for="state">City/State<span style="color:red">*</span></label>
-                  <input class="input" type="text" name="Lastname" required placeholder="Enter your City" id="state">
+                  <input class="input" type="text" name="data[City/State]" required placeholder="Enter your City" id="state">
                  </div>                                
                   <div class="column">
                   <label for="email">Email Address<span style="color:red">*</span></label>
-                  <input class="input" type="email" name="email" required placeholder="Enter your email" id="email">
+                  <input class="input" type="email" name="data[Email]" required placeholder="Enter your email" id="email">
                   </div>                
                   <div class="column">
                   <label for="number">Phone Number/Whatsapp Number<span style="color:red">*</span></label>
-                  <input class="input" type="text" name="phone" required placeholder="Enter your Phone Number" id="number">
+                  <input class="input" type="text" name="data[Phone]" required placeholder="Enter your Phone Number" id="number">
                   </div>
                   <div class="column">
-                  <label for="number">Employed</label>
-                  <input type="radio" name="student" id="employed">
-                  <input class="input" type="text" name="employed"  placeholder="Enter your Profession" id="employed">
+                  <label for="status">Employed</label>
+                  <input type="radio" name="data[Status]" id="employed" value="Employed">
+                  <input class="input" type="text" name="data[Job]"  placeholder="Enter your Profession" id="employed">
                   </div>
                   <div >
-                  <label for="student">Student</label>  
-                  <input type="radio" name="student" id="student">
+                  <label for="status">Student</label>  
+                  <input type="radio" name="data[Status]" id="student" value="Student">
                   <!-- <label for="course">Course Of Study</label>  --> 
-                  <input class="input" type="text" name="course" placeholder="Enter your course of study" id="course">                 
+                  <input class="input" type="text" name="data[Course]" placeholder="Enter your course of study" id="course">                 
                   </div>
                   <div class="column">
-                  <label for="number">Unemployed</label>
-                  <input type="radio" name="student" id="Unemployed">
-                  <label for="number" style="margin-left:40px;">Corper</label>
-                  <input type="radio" name="student" id="Unemployed">
+                  <label for="status">Unemployed</label>
+                  <input type="radio" name="data[Status]" id="Unemployed" value="Unemployed">
+                  <label for="status" style="margin-left:40px;">Corper</label>
+                  <input type="radio" name="data[Status]" id="Unemployed" value="Corper">
                   </div>      
                   <div >
                   <label for="Volunteer">How do you want to volunteer<span style="color:red">*</span></label>
-                  <select id="multipleselect" multiple name="native-select" placeholder="You can choose more than one" data-search="false" data-silent-initial-value-set="true" >
-                        <option value="1" >Field work</option>
-                        <option value="2">Social Media Awareness</option>
-                       <option value="3" >Webinar Moderator</option>
-                       <option value="4" >Content Developer</option>
-                       <option value="5" >Data Analyst</option>
-                       <option value="6" >In-Kind Support/Sponsor</option>
-                       <option value="7" >Photography/Videography</option>
-                       <option value="8" >Graphic Design</option>
-                       <option value="9" >Fund Raising</option>
-                       <option value="10">Student Ambassador(for student alone)</option>
+                  <select id="multipleselect" multiple name="data[Volunteer]" placeholder="You can choose more than one" data-search="false" data-silent-initial-value-set="true" >
+                        <option value="Field work" >Field work</option>
+                        <option value="Social Media Awareness">Social Media Awareness</option>
+                       <option value="Webinar Moderator" >Webinar Moderator</option>
+                       <option value="Content Developer" >Content Developer</option>
+                       <option value="Data Analyst" >Data Analyst</option>
+                       <option value="In-Kind Support/Sponsor" >In-Kind Support/Sponsor</option>
+                       <option value="Photography/Videography" >Photography/Videography</option>
+                       <option value="Graphic Design" >Graphic Design</option>
+                       <option value="Fund Raising" >Fund Raising</option>
+                       <option value="Student Ambassador">Student Ambassador(for student alone)</option>
                   </select>
                    </div>  
-                  <div> <button type="submit" >Submit</button></div>
+                  <div> <button type="submit" name="submit">Submit</button></div>
                    <div class="box"><input  type="checkbox" name="" required > I would like to be added to IleraNigeria whatsapp group page</div>
                    <div class="box"><input  type="checkbox" name="" required > I agree that i have read and fully understand this and pledged my commitment</div>     
                    <p class="p">For more Info reach us at volunteer@ileranigeria.org </p>                      
@@ -212,5 +219,22 @@
       ele: '#multipleselect' 
 });
 </script> 
+        <script>
+            var form = document.getElementById('sheetdb-form');
+        form.addEventListener("submit", e => {
+          e.preventDefault();
+          fetch(form.action, {
+              method : "POST",
+              body: new FormData(document.getElementById("sheetdb-form")),
+          }).then(
+              response => response.json()
+          ).then((html) => {
+            // you can put any JS code here
+            window.open('page1.html', '_blank');
+
+          });
+        });
+        </script>
+        
 </body>
 </html>
