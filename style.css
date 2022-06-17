@@ -545,7 +545,7 @@ section{
 }
 .copyright{
     width: 100%;
-    background: black;
+    background: rgb(32, 32, 37);
     padding: 8px 150px;
     text-align: center;
     color: white;
