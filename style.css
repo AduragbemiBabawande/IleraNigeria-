@@ -112,7 +112,7 @@ header{
 
 }
 header.sticky{
-	background: rgb(32, 32, 32);
+	background: rgb(30, 32, 37);
 	padding: 10px 100px;
 	box-shadow: 0.5px 20px rgba(0, 0, 0, 0.05);
 }
