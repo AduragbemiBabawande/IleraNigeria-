@@ -4,7 +4,7 @@ $visitor_email = $_POST['email'];
 $subject = $_POST['subject'];
 $message = $_POST['message'];
 
-$email_from = 'kehinde@IleraNigeria.org';
+$email_from = 'kehinde@ileranigeria.org';
 
 $email_subject = 'New Form Submission @IleraNigeria';
 
